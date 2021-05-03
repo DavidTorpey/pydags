@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pydags",
-    version="0.1.0",
+    version="0.1.1",
     author="David Torpey",
     author_email="torpey.david93@gmail.com",
     description="A simple, lightweight, extensible DAG framework for Python",
@@ -21,5 +21,6 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
-    license='GPLv3'
+    license='GPLv3',
+    install_requires=open('requirements.txt').read().splitlines()
 )

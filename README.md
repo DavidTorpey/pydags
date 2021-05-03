@@ -46,17 +46,11 @@ pip install -r requirements.txt
 
 ### Install pydags
 
-Currently, pydags needs to be installed from source. Simply run the following command:
+To install **pydags**, simply run the following command:
 
 ```bash
-python3 setup.py install
+pip install pydags
 ```
-
-You may require `sudo` permissions to run this command. If you do not have
-`sudo` permissions on your system, then you can point to a different
-installation directory using the `--home /path/to/folder/` flag and point it
-to a folder you have write permissions to. Ensure that the `build/libs`
-directory  that gets created is in your `PYTHONPATH` environment variable.
 
 ## Example Usage
 
