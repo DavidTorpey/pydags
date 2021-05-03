@@ -35,15 +35,6 @@ Redis server starting automatically. You can verify this by running the
 `redis-server` command, which should result in an `Address already in use`
 message, or similar.
 
-### Python Dependencies
-
-The requirements for the SDK are defined in the `requirements.txt` file, and
-can be installed with the following command:
-
-```bash
-pip install -r requirements.txt
-```
-
 ### Install pydags
 
 To install **pydags**, simply run the following command:
