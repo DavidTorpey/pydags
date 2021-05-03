@@ -1,0 +1,7 @@
+pydot==1.4.2
+networkx==2.5
+redis==3.5.3
+diskcache==5.2.1
+matplotlib==3.3.3
+dill==0.3.3
+cloudpickle==1.6.0
