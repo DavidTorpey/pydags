@@ -106,7 +106,7 @@ pipeline.start()
 ```
 
 Stages of the pipeline that can be run in parallel (in the above case, stages 1
-and 2, and stages 3, 4, 5) will only be run in parallel is you set the
+and 2, and stages 3, 4, 5) will only be run in parallel if you set the
 `num_cores` argument of the `.start()` method to a positive integer
 (representing the number of cores to distribute computation across). For
 example, if you want to parallelize the execution of such nodes that can be run
