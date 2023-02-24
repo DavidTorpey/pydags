@@ -67,13 +67,13 @@ class Pipeline(CloudPickleSerializer, RedisCache):
 
     pipeline = nx.DiGraph()
 
-    def __init__(self):
+    def __init__(self, redis_cache=redis.Redis(host='localhost', port=6379, db=1)):
         """
         We use database number 1 from Redis for the Pipeline's underlying Redis
         cache.
         """
 
-        RedisCache.__init__(self, redis.Redis(host='localhost', port=6379, db=1))
+        RedisCache.__init__(self, redis_cache)
 
     def topological_sort_grouped(self) -> typing.Generator:
         """
